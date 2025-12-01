@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gallery - Nehru Matriculation Higher Secondary School</title>
+<style>
+  body {
+    background: #ffabab;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    margin: 0;
+    color: #222;
+  }
+  .container {
+    max-width: 2000px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+  }
+  h1 {
+    font-size: 2.5rem;
+    color: #550000;
+    margin-bottom: 20px;
+  }
+  .gallery-track {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+  }
+  .gallery-track img,
+  .gallery-track video {
+    width: 350px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 12px;
+    border: 3px solid #fff;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.2);
+    cursor: pointer;
+    transition: transform 0.3s;
+  }
+  .gallery-track img:hover,
+  .gallery-track video:hover {
+    transform: scale(1.05);
+  }
+  .btn-back {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 12px 24px;
+    background: #550000;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: 600;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: 0.3s;
+  }
+  .btn-back:hover {
+    background: #440000;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 10px rgba(0,0,0,0.15);
+  }
+
+  /* Lightbox styles */
+  .lightbox {
+    display: none;
+    position: fixed;
+    top:0; left:0;
+    width:100%; height:100%;
+    background: rgba(0,0,0,0.9);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    flex-direction: column;
+  }
+  .lightbox.active {
+    display: flex;
+  }
+  .lightbox img, .lightbox video {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 12px;
+    box-shadow: 0 0 20px #000;
+  }
+  .lightbox-close {
+    color: #fff;
+    font-size: 2rem;
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    cursor: pointer;
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <h1>Gallery</h1>
+
+  <div class="gallery-track">
+    <!-- Images 1 to 70 -->
+    <img src="images/img1.jpg" alt="">
+    <img src="images/img2.jpg" alt="">
+    <img src="images/img3.jpg" alt="">
+    <img src="images/img4.jpg" alt="">
+    <img src="images/img5.jpg" alt="">
+    <img src="images/img6.jpg" alt="">
+    <img src="images/img7.jpg" alt="">
+    <img src="images/img8.jpg" alt="">
+    <img src="images/img9.jpg" alt="">
+    <img src="images/img10.jpg" alt="">
+    <img src="images/img11.jpg" alt="">
+    <img src="images/img12.jpg" alt="">
+    <img src="images/img13.jpg" alt="">
+    <img src="images/img14.jpg" alt="">
+    <img src="images/img15.jpg" alt="">
+    <img src="images/img16.jpg" alt="">
+    <img src="images/img17.jpg" alt="">
+    <img src="images/img18.jpg" alt="">
+    <img src="images/img19.jpg" alt="">
+    <img src="images/img20.jpg" alt="">
+    <img src="images/img21.jpg" alt="">
+    <img src="images/img22.jpg" alt="">
+    <img src="images/img23.jpg" alt="">
+    <img src="images/img24.jpg" alt="">
+    <img src="images/img25.jpg" alt="">
+    <img src="images/img26.jpg" alt="">
+    <img src="images/img27.jpg" alt="">
+    <img src="images/img28.jpg" alt="">
+    <img src="images/img29.jpg" alt="">
+    <img src="images/img30.jpg" alt="">
+    <img src="images/img31.jpg" alt="">
+    <img src="images/img32.jpg" alt="">
+    <img src="images/img33.jpg" alt="">
+    <img src="images/img34.jpg" alt="">
+    <img src="images/img35.jpg" alt="">
+    <img src="images/img36.jpg" alt="">
+    <img src="images/img37.jpg" alt="">
+    <img src="images/img38.jpg" alt="">
+    <img src="images/img39.jpg" alt="">
+    <img src="images/img40.jpg" alt="">
+    <img src="images/img41.jpg" alt="">
+    <img src="images/img42.jpg" alt="">
+    <img src="images/img43.jpg" alt="">
+    <img src="images/img44.jpg" alt="">
+    <img src="images/img45.jpg" alt="">
+    <img src="images/img46.jpg" alt="">
+    <img src="images/img47.jpg" alt="">
+    <img src="images/img48.jpg" alt="">
+    <img src="images/img49.jpg" alt="">
+    <img src="images/img50.jpg" alt="">
+    <img src="images/img51.jpg" alt="">
+    <img src="images/img52.jpg" alt="">
+    <img src="images/img53.jpg" alt="">
+    <img src="images/img54.jpg" alt="">
+    <img src="images/img55.jpg" alt="">
+    <img src="images/img56.jpg" alt="">
+    <img src="images/img57.jpg" alt="">
+    <img src="images/img58.jpg" alt="">
+    <img src="images/img59.jpg" alt="">
+    <img src="images/img60.jpg" alt="">
+    <img src="images/img61.jpg" alt="">
+    <img src="images/img62.jpg" alt="">
+    <img src="images/img63.jpg" alt="">
+    <img src="images/img64.jpg" alt="">
+    <img src="images/img65.jpg" alt="">
+    <img src="images/img66.jpg" alt="">
+    <img src="images/img67.jpg" alt="">
+    <img src="images/img68.jpg" alt="">
+    <img src="images/img69.jpg" alt="">
+    <img src="images/img70.jpg" alt="">
+
+    <!-- Videos -->
+    <video src="videos/video1.mp4" controls></video>
+    <video src="videos/video2.mp4" controls></video>
+    <video src="videos/video3.mp4" controls></video>
+    <video src="videos/video4.mp4" controls></video>
+    <video src="videos/video5.mp4" controls></video>
+    <video src="videos/video6.mp4" controls></video>
+    <video src="videos/video7.mp4" controls></video>
+  </div>
+
+  <a href="index.html" class="btn-back">Back to Home</a>
+</div>
+
+<!-- Lightbox Modal -->
+<div id="lightbox" class="lightbox">
+  <span class="lightbox-close">&times;</span>
+  <img id="lightbox-img" src="" alt="">
+  <video id="lightbox-video" src="" controls style="display:none;"></video>
+</div>
+
+<script>
+const lightbox = document.getElementById('lightbox');
+const lightboxImg = document.getElementById('lightbox-img');
+const lightboxVideo = document.getElementById('lightbox-video');
+const closeBtn = document.querySelector('.lightbox-close');
+
+document.querySelectorAll('.gallery-track img, .gallery-track video').forEach(item => {
+  item.addEventListener('click', () => {
+    if(item.tagName === 'IMG'){
+      lightboxImg.src = item.src;
+      lightboxImg.style.display = 'block';
+      lightboxVideo.style.display = 'none';
+    } else {
+      lightboxVideo.src = item.src;
+      lightboxVideo.style.display = 'block';
+      lightboxImg.style.display = 'none';
+    }
+    lightbox.classList.add('active');
+  });
+});
+
+closeBtn.addEventListener('click', () => {
+  lightbox.classList.remove('active');
+  lightboxVideo.pause();
+});
+lightbox.addEventListener('click', e => {
+  if(e.target === lightbox){
+    lightbox.classList.remove('active');
+    lightboxVideo.pause();
+  }
+});
+</script>
+
+</body>
+</html>
